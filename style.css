@@ -43,7 +43,7 @@ textarea{
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #4dbcca;
   color: white;
 }
 
@@ -71,12 +71,8 @@ textarea{
 }
 
 #currentDay {
-  width: 600px;
-  height: 100px;
   display: flex;
   align-items: center;
-  background-color: magenta;
-  border-radius: 7px;
   justify-content: center;
   color: greenyellow;
   font-family: 'Control One', sans-serif;
