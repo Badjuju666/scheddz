@@ -63,6 +63,7 @@ textarea{
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
+  flex: 1;
 }
 
 .saveBtn i:hover {
@@ -78,3 +79,17 @@ textarea{
   font-family: 'Control One', sans-serif;
   font-size: 2em;
 }
+
+.container {
+  display: flex;
+
+}
+
+.time {
+  flex:2;
+}
+
+.event {
+  flex: 4;
+}
+
