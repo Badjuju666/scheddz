@@ -81,15 +81,22 @@ textarea{
 }
 
 .container {
-  display: flex;
-
+  display: grid;
+  height: 400px;
+  align-content: center;
+  display: grid;
+  height: 400px;
+  align-content: space-between;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
 }
 
 .time {
-  flex:2;
+  
 }
 
 .event {
-  flex: 4;
+  
 }
 
