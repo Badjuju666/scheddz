@@ -29,9 +29,24 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <a>
+
+      
       <!-- Timeblocks go here -->
     </div>
+    <script>
+      const currentDay = document.getElementById('currentDay');
 
+      function updateT () {
+        const now = moment();
+        const roboTime = now.format("dddd, MMMM Do YYYY, h:mm:ss A");
+
+        currentDay.textContent = roboTime;
+      }
+
+      setInterval(updateT, 1000);
+      updateT();
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
