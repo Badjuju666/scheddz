@@ -1,16 +1,25 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
-textarea{
+textarea {
+  height: 100%;
+  min-height: 90px;
+  width: 100%;
   background: transparent;
   border: none;
+  outline: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.textarea:focus {
+  outline: none;
 }
 
 .jumbotron {
@@ -27,51 +36,53 @@ textarea{
 
 .time-block{
   text-align: center;
-  border-radius: 15px;
 }
 
 .row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+ border-top: 1px solid white;
 }
 
-.hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+.textarea-container {
+  border-left: 1px solid black;
 }
 
-.past {
+.past.textarea-container {
   background-color: #4dbcca;
   color: white;
 }
 
-.present {
+.present.textarea-container {
   background-color: #ff6961;
   color: white;
 }
 
-.future {
+.future.textarea-container {
   background-color: #77dd77;
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
+.save-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
-  text-align: center;
+
+  font-size: 20px;
+
+  cursor: pointer;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.save-button i:hover {
+  font-size: 25px;
   transition: all .3s ease-in-out;
 }
 
-#currentDay {
+#current-day {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,20 +91,12 @@ textarea{
   font-size: 2em;
 }
 
-.container {
-  display: grid;
-  height: 400px;
-  align-content: center;
-  display: grid;
-  height: 400px;
-  align-content: space-between;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  padding: 10px;
-}
 
 .time {
-  text-align: center;
+  background-color: #fdfdfd;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  text-align: end;
 }
 
 .event {
